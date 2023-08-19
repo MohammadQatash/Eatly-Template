@@ -1,0 +1,12 @@
+/* Globl Rules */
+@import url('./globalRules.css');
+/* Utilities */
+@import url('./utilities.css');
+/* Variables */
+@import url('./variables.css');
+/* Animation */
+@import url('./animation.css');
+/* Header */
+@import url('./header.css');
+/* Footer */
+@import url('./footer.css');

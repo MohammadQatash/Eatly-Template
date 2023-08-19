@@ -1,0 +1,122 @@
+.footer-box-1 div {
+    width: 11.67%;
+}
+.footer-box-1 div:first-child {
+    width: 28.34%;
+}
+.logo-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -21px;
+    width: 15px;
+    height: 24px;
+    background-color: var(--purble-dark-color);
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.logo-footer::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -11px;
+    width: 8px;
+    height: 12px;
+    background-color: var(--secondary-color);
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.logo-footer {
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo-footer a {
+    color: var(--primary-color);
+}
+.logo-footer-content {
+    color: var(--gray-lighten1-color);
+    width: 68%;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.footer-list-head {
+    font-size: 18px;
+    color: var(--purble-dark-color);
+}
+.footer-list li {
+    position: relative;
+    font-size: 14px;
+    padding: 18px 0 0 0;
+    cursor: pointer;
+}
+.footer-list li a {
+    color: var(--gray-lighten1-color);
+}
+.footer-list li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.2s ease-in-out;
+}
+.footer-list li:hover a::before {
+    width: 100%;
+}
+.footer-list li:hover a {
+    color: var(--secondary-color);
+}
+@media (max-width: 992px) {
+    .footer-box-1 {
+        flex-wrap: wrap;
+    }
+    .footer-box-1 div:first-child {
+        width: 99%;
+    }
+    .logo-footer-content {
+        width: 100%;
+    }
+    .logo-footer-contianer {
+        margin-bottom: 50px;
+    }
+    .footer-box-1 div {
+        width: 21%;
+    }
+}
+.rights-reserved, .privacy-policy {
+    width: 50%;
+    color: var(--gray-lighten1-color);
+}
+.privacy-policy div:first-child {
+    margin-right: 50px;
+}
+@media (max-width: 780px) {
+    .footer-box-2 {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .rights-reserved, .privacy-policy {
+        width: 100%;
+    }
+    .privacy-policy {
+        justify-content: center;
+        font-size: 13px;
+    }
+}
+@media (max-width: 576px) {
+    .footer-box-1 div:not(:first-child) {
+        width: 47%;
+        margin-bottom: 60px;
+    }
+    .privacy-policy {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .privacy-policy div {
+        width: 100%;
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,61 @@
+/* Style Css */
+@import url('./style.css');
+
+@media (min-width: 1200px) {
+    .animation {
+        opacity: 0;
+    }
+    .slide-right, .slide-left, .down-up, .up-down {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+    .slide-right {
+        animation-name: slide-right;
+    }
+    .slide-left {
+        animation-name: slide-left;
+    }
+    .down-up {
+        animation-name: down-up;
+    }
+    .up-down {
+        animation-name: up-down;
+    }
+    @keyframes slide-right {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    }
+    @keyframes slide-left {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    }
+    @keyframes down-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }
+    @keyframes up-down {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }
+}
